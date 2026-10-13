@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "start": "astro dev --host 0.0.0.0",
-    "build": "astro check && astro build",
+    "fetch:articles": "node scripts/fetch-articles.mjs",
+    "build": "npm run fetch:articles && astro check && astro build",
     "preview": "astro preview --host 0.0.0.0",
     "test": "vitest run"
   },
   "dependencies": {
-    "astro": "^5.14.0"
+    "astro": "^5.14.0",
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
