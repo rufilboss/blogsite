@@ -1,3 +1,3 @@
 # Blog Website
 
-A simple blog website built with Astro.
+A simple Astro website that fetches and displays my published articles from external platforms.
