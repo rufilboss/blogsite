@@ -1,3 +1,10 @@
+# Node / Astro / frontend
+node_modules/
+.astro/
+.vite/
+dist/
+coverage/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
