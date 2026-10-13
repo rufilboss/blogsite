@@ -1,23 +1,21 @@
 import type { APIRoute } from 'astro';
-import { getCollection } from 'astro:content';
+import { publishedArticles } from '../data/articles';
 
 export const GET: APIRoute = async () => {
-  const posts = (await getCollection('writing')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
     <title>Ilyas Rufai</title>
     <link>https://blog.rufilboss.me</link>
     <description>Field notes from platform engineering, operations, and secure delivery.</description>
-    ${posts
+    ${publishedArticles
       .map(
-        (post) => `
+        (article) => `
       <item>
-        <title><![CDATA[${post.data.title}]]></title>
-        <link>https://blog.rufilboss.me/writing/${post.slug}</link>
-        <description><![CDATA[${post.data.description}]]></description>
-        <pubDate>${new Date(post.data.pubDate).toUTCString()}</pubDate>
+        <title><![CDATA[${article.title}]]></title>
+        <link>${article.url}</link>
+        <description><![CDATA[${article.platform} article by Ilyas Rufai.]]></description>
+        <pubDate>${new Date(article.publishedAt).toUTCString()}</pubDate>
       </item>`,
       )
       .join('')}
