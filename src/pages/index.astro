@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+
+const posts = (await getCollection('writing')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const featured = posts.filter((post) => post.data.featured).slice(0, 3);
+const topics = ['Platform Engineering', 'DevSecOps', 'Engineering Leadership'];
+---
+
+<SiteLayout title="Field Notes" description="Editorial notes on platform engineering, developer experience, and secure delivery." currentPath="/">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Field Notes</div>
+        <h1>Engineering systems that stay humane under pressure.</h1>
+        <p class="hero-copy">
+          I write about platform thinking, secure defaults, and the operating realities behind dependable product delivery.
+        </p>
+      </div>
+      <aside class="hero-aside">
+        <div class="eyebrow">Current focus</div>
+        <p>Senior engineering and DevSecOps writing for teams shipping critical systems at scale.</p>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+    <div class="container content-grid">
+      <div>
+        <div class="section-heading">
+          <h2>Featured writing</h2>
+          <a href="/writing">Browse archive</a>
+        </div>
+
+        <div class="card-list">
+          {featured.map((post) => (
+            <ArticleCard post={post} isFeatured={true} />
+          ))}
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <h3>Reading list</h3>
+        <ul class="topic-list">
+          {topics.map((topic) => (
+            <li><a href="/writing"><span>{topic}</span><span>→</span></a></li>
+          ))}
+        </ul>
+      </aside>
+    </div>
+  </main>
+</SiteLayout>

@@ -1,0 +1,37 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+
+<SiteLayout title="About the Engineer" description="Profile and focus areas for Alec Mercer." currentPath="/about">
+  <main>
+    <div class="container article-layout">
+      <section>
+        <div class="article-header">
+          <div class="eyebrow">About the Engineer</div>
+          <h1>Building reliable systems with strong defaults and clear intent.</h1>
+        </div>
+
+        <div class="prose" style="margin-top: 2rem;">
+          <p>
+            I design developer platforms, delivery systems, and secure operational patterns for teams that need to move quickly without creating fragile complexity.
+          </p>
+          <p>
+            My work sits at the intersection of platform engineering, developer experience, and security. I care about systems that are easy to understand, hard to misuse, and credible under pressure.
+          </p>
+          <p>
+            The goal is simple: create tooling and practices that let engineers do their best work while preserving operability and trust.
+          </p>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <h3>Focus areas</h3>
+        <ul class="topic-list">
+          <li><a href="/writing"><span>Platform Engineering</span><span>→</span></a></li>
+          <li><a href="/writing"><span>DevSecOps</span><span>→</span></a></li>
+          <li><a href="/writing"><span>Technical Writing</span><span>→</span></a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+</SiteLayout>

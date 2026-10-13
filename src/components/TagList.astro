@@ -1,0 +1,9 @@
+---
+const { tags = [] }: { tags?: string[] } = Astro.props;
+---
+
+<div class="article-meta">
+  {tags.map((tag: string) => (
+    <span class="tag">#{tag}</span>
+  ))}
+</div>

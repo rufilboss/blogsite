@@ -1,0 +1,20 @@
+---
+const { post, isFeatured = false } = Astro.props;
+const formatted = new Date(post.data.pubDate).toLocaleDateString('en-US', {
+  month: 'short',
+  day: 'numeric',
+  year: 'numeric',
+});
+---
+
+<article class="article-card">
+  {post.data.image && <img class="article-card-image" src={post.data.image} alt={post.data.imageAlt ?? post.data.title} />}
+  <div class="card-meta">
+    <span>{formatted}</span>
+    <span>{post.data.readTime}</span>
+    <span>{post.data.category}</span>
+  </div>
+  <h3><a href={`/writing/${post.slug}`}>{post.data.title}</a></h3>
+  <p>{post.data.description}</p>
+  {isFeatured && <div class="article-meta" style="margin-top: 0.85rem;"><span class="tag">Featured</span></div>}
+</article>

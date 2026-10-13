@@ -1,0 +1,26 @@
+---
+const { currentPath = '/' } = Astro.props;
+const nav = [
+  { label: 'Field Notes', href: '/', match: '/' },
+  { label: 'Writing', href: '/writing', match: '/writing' },
+  { label: 'About', href: '/about', match: '/about' },
+];
+---
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="/">Alec Mercer</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        {nav.map((item) => {
+          const isCurrent = currentPath === item.match || (item.match === '/writing' && currentPath.startsWith('/writing'));
+          return (
+            <li>
+              <a href={item.href} aria-current={isCurrent ? 'page' : undefined}>{item.label}</a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  </div>
+</header>

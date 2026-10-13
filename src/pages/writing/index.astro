@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+
+const posts = (await getCollection('writing')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const filters = ['all', 'platform engineering', 'devsecops', 'engineering leadership'];
+---
+
+<SiteLayout title="Writing Archive" description="Article archive for engineering, operations, and secure platform work." currentPath="/writing">
+  <main>
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Writing Archive</div>
+          <h1>Field notes and essays</h1>
+        </div>
+      </div>
+
+      <div class="filter-row" aria-label="Article filters">
+        {filters.map((filter) => (
+          <button class="filter" aria-selected={filter === 'all' ? 'true' : 'false'}>{filter}</button>
+        ))}
+      </div>
+
+      <div class="card-list">
+        {posts.map((post) => (
+          <ArticleCard post={post} />
+        ))}
+      </div>
+    </div>
+  </main>
+</SiteLayout>
