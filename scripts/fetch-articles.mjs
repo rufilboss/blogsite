@@ -7,10 +7,9 @@ const snapshotPath = path.join(root, 'src/data/articles.generated.json');
 const parser = new Parser();
 
 const sources = [
-  { platform: 'Dev.to', url: 'https://dev.to/feed/rufilboss' },
-  { platform: 'Hashnode', url: 'https://blog.rufilboss.me/rss.xml' },
-  { platform: 'freeCodeCamp', url: 'https://www.freecodecamp.org/news/author/rufilboss/rss/' },
-  { platform: 'Reclear', url: 'https://reclear.io/rss.xml', author: 'ilyas rufai' },
+  { platform: 'Dev.to', url: 'https://dev.to/feed/rufilboss', host: 'dev.to' },
+  { platform: 'freeCodeCamp', url: 'https://www.freecodecamp.org/news/author/rufilboss/rss/', host: 'www.freecodecamp.org' },
+  { platform: 'Reclear', url: 'https://reclear.io/rss.xml', host: 'reclear.io', author: 'ilyas rufai' },
 ];
 
 const categoryFor = (title) => {
@@ -63,7 +62,13 @@ const fetchSource = async (source) => {
           publishedAt,
         };
       })
-      .filter((article) => article.title && article.url);
+      .filter((article) => {
+        try {
+          return article.title && article.url && new URL(article.url).hostname === source.host;
+        } catch {
+          return false;
+        }
+      });
   } finally {
     clearTimeout(timeout);
   }

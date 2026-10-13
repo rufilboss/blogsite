@@ -1,13 +1,5 @@
 [
   {
-    "title": "Platform Engineering at the Edge",
-    "url": "https://example.com/writing/platform-engineering-at-the-edge",
-    "platform": "Hashnode",
-    "category": "DevSecOps",
-    "date": "Sep 28, 2026, 12:00 AM UTC",
-    "publishedAt": "2026-09-28T00:00:00.000Z"
-  },
-  {
     "title": "How to Prevent Poisoned GitHub Actions Dependencies",
     "url": "https://www.freecodecamp.org/news/how-to-prevent-poisoned-github-actions-dependencies/",
     "platform": "freeCodeCamp",
@@ -16,28 +8,12 @@
     "publishedAt": "2026-09-18T16:03:13.000Z"
   },
   {
-    "title": "Threat Modeling the Developer Experience",
-    "url": "https://example.com/writing/threat-modeling-the-developer-experience",
-    "platform": "Hashnode",
-    "category": "DevSecOps",
-    "date": "Sep 14, 2026, 12:00 AM UTC",
-    "publishedAt": "2026-09-14T00:00:00.000Z"
-  },
-  {
     "title": "Sign Container Images with Cosign in GitHub Actions",
     "url": "https://reclear.io/blog/sign-container-images-with-cosign-github-actions",
     "platform": "Reclear",
     "category": "CI/CD",
     "date": "Sep 12, 2026, 12:00 AM UTC",
     "publishedAt": "2026-09-12T00:00:00.000Z"
-  },
-  {
-    "title": "The Smallest Useful Internal Platform",
-    "url": "https://example.com/writing/the-smallest-useful-internal-platform",
-    "platform": "Hashnode",
-    "category": "DevSecOps",
-    "date": "Aug 31, 2026, 12:00 AM UTC",
-    "publishedAt": "2026-08-31T00:00:00.000Z"
   },
   {
     "title": "Terraform Security Scanning in GitHub Actions",

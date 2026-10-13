@@ -15,7 +15,7 @@ export const GET: APIRoute = async () => {
         (post) => `
       <item>
         <title><![CDATA[${post.data.title}]]></title>
-        <link>https://example.com/writing/${post.slug}</link>
+        <link>https://blog.rufilboss.me/writing/${post.slug}</link>
         <description><![CDATA[${post.data.description}]]></description>
         <pubDate>${new Date(post.data.pubDate).toUTCString()}</pubDate>
       </item>`,
