@@ -7,7 +7,7 @@ export const GET: APIRoute = async () => {
   <channel>
     <title>Ilyas Rufai</title>
     <link>https://blog.rufilboss.me</link>
-    <description>Field notes from platform engineering, operations, and secure delivery.</description>
+    <description>Published articles from Ilyas Rufai on platform engineering, operations, and secure delivery.</description>
     ${publishedArticles
       .map(
         (article) => `
