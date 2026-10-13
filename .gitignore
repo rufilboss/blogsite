@@ -5,6 +5,10 @@ node_modules/
 dist/
 coverage/
 
+# Local Copilot/Azure agent files and generated previews
+.github/agents/
+.azure/.preview-temp/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

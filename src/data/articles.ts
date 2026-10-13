@@ -4,6 +4,7 @@ export type PublishedArticle = {
   platform: 'Hashnode' | 'Dev.to' | 'freeCodeCamp' | 'Reclear';
   category: string;
   date: string;
+  publishedAt: string;
 };
 
 export const author = {
@@ -15,13 +16,14 @@ export const author = {
   reclearUrl: 'https://reclear.io/blog/writers/rufilboss',
 };
 
-export const publishedArticles: PublishedArticle[] = [
+const articleCatalog: PublishedArticle[] = [
   {
     title: 'How to Choose a KMS Key Strategy for SaaS Teams',
     url: 'https://dev.to/rufilboss/how-to-choose-a-kms-key-strategy-for-saas-teams-4p59',
     platform: 'Dev.to',
     category: 'Security',
     date: 'Aug 18, 2025',
+    publishedAt: '2025-08-18T00:00:00Z',
   },
   {
     title: 'How to Build an Audit-Ready CloudTrail and Config Baseline',
@@ -29,6 +31,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Dev.to',
     category: 'AWS',
     date: 'Aug 12, 2025',
+    publishedAt: '2025-08-12T00:00:00Z',
   },
   {
     title: 'How to Build a Three-Layer Artifact Integrity Pipeline for Container Releases',
@@ -36,6 +39,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Dev.to',
     category: 'DevSecOps',
     date: 'Jul 29, 2025',
+    publishedAt: '2025-07-29T00:00:00Z',
   },
   {
     title: 'What Is the Secrets Management Maturity Model for DevSecOps Teams?',
@@ -43,6 +47,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Dev.to',
     category: 'Security',
     date: 'Jul 13, 2025',
+    publishedAt: '2025-07-13T00:00:00Z',
   },
   {
     title: 'How to Build a Security Alert Router with n8n',
@@ -50,6 +55,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Dev.to',
     category: 'Automation',
     date: 'Jun 28, 2025',
+    publishedAt: '2025-06-28T00:00:00Z',
   },
   {
     title: 'How to Design IAM Roles for Multi-Account AWS Environments',
@@ -57,6 +63,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Dev.to',
     category: 'AWS',
     date: 'Jun 24, 2025',
+    publishedAt: '2025-06-24T00:00:00Z',
   },
   {
     title: 'Terraform EC2 and S3 Upload Access: A Simple IAM Role Setup Without Access Keys',
@@ -64,6 +71,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Dev.to',
     category: 'Terraform',
     date: 'Jun 21, 2025',
+    publishedAt: '2025-06-21T00:00:00Z',
   },
   {
     title: 'Secret Scanning in CI: What Pre-Commit, Pull Request, and Main Branch Each Actually Catch',
@@ -71,20 +79,23 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Dev.to',
     category: 'CI/CD',
     date: 'Jun 17, 2025',
+    publishedAt: '2025-06-17T00:00:00Z',
   },
   {
     title: 'How to Prevent Poisoned GitHub Actions Dependencies',
     url: 'https://www.freecodecamp.org/news/how-to-prevent-poisoned-github-actions-dependencies/',
     platform: 'freeCodeCamp',
     category: 'DevSecOps',
-    date: '2025',
+    date: 'Sep 18, 2026 · 4:03 PM UTC',
+    publishedAt: '2026-09-18T16:03:13.394Z',
   },
   {
     title: 'How to Harden GitHub Actions Permissions with Least Privilege by Default',
     url: 'https://www.freecodecamp.org/news/how-to-harden-github-actions-permissions/',
     platform: 'freeCodeCamp',
     category: 'DevSecOps',
-    date: '2025',
+    date: 'Aug 6, 2026 · 10:51 PM UTC',
+    publishedAt: '2026-08-06T22:51:17.555Z',
   },
   {
     title: 'Sign Container Images with Cosign in GitHub Actions',
@@ -92,6 +103,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Reclear',
     category: 'CI/CD',
     date: 'Sep 12, 2026',
+    publishedAt: '2026-09-12T00:00:00Z',
   },
   {
     title: 'Terraform Security Scanning in GitHub Actions',
@@ -99,6 +111,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Reclear',
     category: 'Security',
     date: 'Aug 22, 2026',
+    publishedAt: '2026-08-22T00:00:00Z',
   },
   {
     title: 'How to Fix the "CrashLoopBackOff" Error in Kubernetes',
@@ -106,6 +119,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Reclear',
     category: 'Kubernetes',
     date: 'Jul 11, 2026',
+    publishedAt: '2026-07-11T00:00:00Z',
   },
   {
     title: 'Kubernetes ConfigMap vs Secret Explained',
@@ -113,6 +127,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Reclear',
     category: 'Kubernetes',
     date: 'Jul 10, 2026',
+    publishedAt: '2026-07-10T00:00:00Z',
   },
   {
     title: 'Optimizing Serverless Applications with AWS Lambda and Amazon EventBridge',
@@ -120,6 +135,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Hashnode',
     category: 'Serverless',
     date: 'Jan 15, 2025',
+    publishedAt: '2025-01-15T00:00:00Z',
   },
   {
     title: 'AWS Lambda: The Power of Serverless Computing',
@@ -127,6 +143,7 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Hashnode',
     category: 'Serverless',
     date: 'Dec 25, 2024',
+    publishedAt: '2024-12-25T00:00:00Z',
   },
   {
     title: 'How to Deploy a Static Website to AWS S3 Using GitHub Actions',
@@ -134,5 +151,11 @@ export const publishedArticles: PublishedArticle[] = [
     platform: 'Hashnode',
     category: 'CI/CD',
     date: 'Jun 29, 2025',
+    publishedAt: '2025-06-29T00:00:00Z',
   },
 ];
+
+export const publishedArticles = [...articleCatalog].sort(
+  (firstArticle, secondArticle) =>
+    Date.parse(secondArticle.publishedAt) - Date.parse(firstArticle.publishedAt),
+);

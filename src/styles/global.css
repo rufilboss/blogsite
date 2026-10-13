@@ -310,6 +310,14 @@ main {
   padding: 0.5rem 0.75rem;
   font-family: var(--font-mono);
   font-size: var(--text-sm);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.filter:hover,
+.filter:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .filter[aria-selected="true"] {

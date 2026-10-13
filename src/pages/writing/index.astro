@@ -17,13 +17,19 @@ const filters = ['all', 'security', 'aws', 'devsecops', 'kubernetes', 'ci/cd'];
 
       <div class="filter-row" aria-label="Article filters">
         {filters.map((filter) => (
-          <button class="filter" aria-selected={filter === 'all' ? 'true' : 'false'}>{filter}</button>
+          <button
+            class="filter"
+            type="button"
+            data-filter={filter}
+            aria-selected={filter === 'all' ? 'true' : 'false'}
+            aria-controls="article-list"
+          >{filter}</button>
         ))}
       </div>
 
-      <div class="card-list">
+      <div class="card-list" id="article-list">
         {publishedArticles.map((article) => (
-          <article class="article-card">
+          <article class="article-card" data-category={article.category.toLowerCase()}>
             <div class="card-meta">
               <span>{article.platform}</span>
               <span>{article.date}</span>
@@ -37,3 +43,23 @@ const filters = ['all', 'security', 'aws', 'devsecops', 'kubernetes', 'ci/cd'];
     </div>
   </main>
 </SiteLayout>
+
+<script>
+  const filterButtons = document.querySelectorAll<HTMLButtonElement>('[data-filter]');
+  const articleCards = document.querySelectorAll<HTMLElement>('[data-category]');
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const selectedFilter = button.dataset.filter;
+
+      filterButtons.forEach((filterButton) => {
+        filterButton.setAttribute('aria-selected', String(filterButton === button));
+      });
+
+      articleCards.forEach((card) => {
+        const isVisible = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+        card.hidden = !isVisible;
+      });
+    });
+  });
+</script>
