@@ -1,3 +1,3 @@
 # Blog Website
 
-A blog website built with Python
+A simple blog website built with Astro.
