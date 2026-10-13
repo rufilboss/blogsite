@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Platform Engineering at the Edge",
+    "url": "https://example.com/writing/platform-engineering-at-the-edge",
+    "platform": "Hashnode",
+    "category": "DevSecOps",
+    "date": "Sep 28, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-09-28T00:00:00.000Z"
+  },
+  {
+    "title": "How to Prevent Poisoned GitHub Actions Dependencies",
+    "url": "https://www.freecodecamp.org/news/how-to-prevent-poisoned-github-actions-dependencies/",
+    "platform": "freeCodeCamp",
+    "category": "CI/CD",
+    "date": "Sep 18, 2026, 4:03 PM UTC",
+    "publishedAt": "2026-09-18T16:03:13.000Z"
+  },
+  {
+    "title": "Threat Modeling the Developer Experience",
+    "url": "https://example.com/writing/threat-modeling-the-developer-experience",
+    "platform": "Hashnode",
+    "category": "DevSecOps",
+    "date": "Sep 14, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-09-14T00:00:00.000Z"
+  },
+  {
+    "title": "Sign Container Images with Cosign in GitHub Actions",
+    "url": "https://reclear.io/blog/sign-container-images-with-cosign-github-actions",
+    "platform": "Reclear",
+    "category": "CI/CD",
+    "date": "Sep 12, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-09-12T00:00:00.000Z"
+  },
+  {
+    "title": "The Smallest Useful Internal Platform",
+    "url": "https://example.com/writing/the-smallest-useful-internal-platform",
+    "platform": "Hashnode",
+    "category": "DevSecOps",
+    "date": "Aug 31, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-08-31T00:00:00.000Z"
+  },
+  {
+    "title": "Terraform Security Scanning in GitHub Actions",
+    "url": "https://reclear.io/blog/terraform-security-scanning-github-actions",
+    "platform": "Reclear",
+    "category": "Terraform",
+    "date": "Aug 22, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-08-22T00:00:00.000Z"
+  },
+  {
+    "title": "How to Choose a KMS Key Strategy for SaaS Teams",
+    "url": "https://dev.to/rufilboss/how-to-choose-a-kms-key-strategy-for-saas-teams-4p59",
+    "platform": "Dev.to",
+    "category": "DevSecOps",
+    "date": "Aug 18, 2026, 9:07 AM UTC",
+    "publishedAt": "2026-08-18T09:07:17.000Z"
+  },
+  {
+    "title": "How to Build an Audit-Ready CloudTrail and Config Baseline",
+    "url": "https://dev.to/rufilboss/how-to-build-an-audit-ready-cloudtrail-and-config-baseline-23a6",
+    "platform": "Dev.to",
+    "category": "AWS",
+    "date": "Aug 12, 2026, 6:59 PM UTC",
+    "publishedAt": "2026-08-12T18:59:12.000Z"
+  },
+  {
+    "title": "How to Harden GitHub Actions Permissions with Least Privilege by Default",
+    "url": "https://www.freecodecamp.org/news/how-to-harden-github-actions-permissions/",
+    "platform": "freeCodeCamp",
+    "category": "CI/CD",
+    "date": "Aug 6, 2026, 10:51 PM UTC",
+    "publishedAt": "2026-08-06T22:51:17.000Z"
+  },
+  {
+    "title": "How to Build a Three-Layer Artifact Integrity Pipeline for Container Releases",
+    "url": "https://dev.to/rufilboss/how-to-build-a-three-layer-artifact-integrity-pipeline-for-container-releases-1fpf",
+    "platform": "Dev.to",
+    "category": "DevSecOps",
+    "date": "Jul 29, 2026, 10:35 AM UTC",
+    "publishedAt": "2026-07-29T10:35:28.000Z"
+  },
+  {
+    "title": "What Is the Secrets Management Maturity Model for DevSecOps Teams?",
+    "url": "https://dev.to/rufilboss/what-is-the-secrets-management-maturity-model-for-devsecops-teams-19l0",
+    "platform": "Dev.to",
+    "category": "Security",
+    "date": "Jul 13, 2026, 11:45 AM UTC",
+    "publishedAt": "2026-07-13T11:45:39.000Z"
+  },
+  {
+    "title": "How to Fix the \"CrashLoopBackOff\" Error in Kubernetes",
+    "url": "https://reclear.io/blog/how-to-fix-crashloopbackoff-in-kubernetes",
+    "platform": "Reclear",
+    "category": "Kubernetes",
+    "date": "Jul 11, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-07-11T00:00:00.000Z"
+  },
+  {
+    "title": "Kubernetes ConfigMap vs Secret Explained",
+    "url": "https://reclear.io/blog/kubernetes-configmap-vs-secret-explained",
+    "platform": "Reclear",
+    "category": "Kubernetes",
+    "date": "Jul 10, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-07-10T00:00:00.000Z"
+  },
+  {
+    "title": "How to Fix the \"ImagePullBackOff\" Error in Kubernetes",
+    "url": "https://reclear.io/blog/how-to-fix-imagepullbackoff-error-in-kubernetes",
+    "platform": "Reclear",
+    "category": "Kubernetes",
+    "date": "Jul 4, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-07-04T00:00:00.000Z"
+  },
+  {
+    "title": "How to Build a Security Alert Router with n8n",
+    "url": "https://dev.to/rufilboss/my-first-devsecops-automation-in-n8n-route-security-alerts-to-slack-27h",
+    "platform": "Dev.to",
+    "category": "Security",
+    "date": "Jun 28, 2026, 6:23 AM UTC",
+    "publishedAt": "2026-06-28T06:23:43.000Z"
+  },
+  {
+    "title": "How to Design IAM Roles for Multi-Account AWS Environments",
+    "url": "https://dev.to/rufilboss/iam-role-design-patterns-for-multi-account-aws-environments-3eng",
+    "platform": "Dev.to",
+    "category": "AWS",
+    "date": "Jun 24, 2026, 4:09 AM UTC",
+    "publishedAt": "2026-06-24T04:09:26.000Z"
+  },
+  {
+    "title": "Terraform EC2 and S3 Upload Access: A Simple IAM Role Setup Without Access Keys",
+    "url": "https://dev.to/rufilboss/terraform-ec2-and-s3-upload-access-a-simple-iam-role-setup-without-access-keys-4k99",
+    "platform": "Dev.to",
+    "category": "Terraform",
+    "date": "Jun 21, 2026, 7:05 AM UTC",
+    "publishedAt": "2026-06-21T07:05:28.000Z"
+  },
+  {
+    "title": "15 Docker Commands Every Developer Should Know (With Examples)",
+    "url": "https://reclear.io/blog/docker-commands-every-developer-should-know",
+    "platform": "Reclear",
+    "category": "DevSecOps",
+    "date": "Jun 20, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-06-20T00:00:00.000Z"
+  },
+  {
+    "title": "Terraform vs Ansible: When to Use Which",
+    "url": "https://reclear.io/blog/terraform-vs-ansible-when-to-use-which",
+    "platform": "Reclear",
+    "category": "Terraform",
+    "date": "Jun 18, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-06-18T00:00:00.000Z"
+  },
+  {
+    "title": "Secret Scanning in CI: What Pre-Commit, Pull Request, and Main Branch Each Actually Catch",
+    "url": "https://dev.to/rufilboss/secret-scanning-in-ci-what-pre-commit-pull-request-and-main-branch-each-actually-catch-3c55",
+    "platform": "Dev.to",
+    "category": "Security",
+    "date": "Jun 17, 2026, 11:32 AM UTC",
+    "publishedAt": "2026-06-17T11:32:18.000Z"
+  },
+  {
+    "title": "How to Eliminate Long-Lived Cloud Keys in CI/CD Using OIDC",
+    "url": "https://reclear.io/blog/oidc-for-cicd-eliminate-long-lived-cloud-keys",
+    "platform": "Reclear",
+    "category": "CI/CD",
+    "date": "Jun 6, 2026, 12:00 AM UTC",
+    "publishedAt": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "title": "Amazon S3 Bucket Names Aren’t Always Globally Unique Anymore — Here’s What Changed (and Why I’m Excited)",
+    "url": "https://dev.to/rufilboss/amazon-s3-bucket-names-arent-always-globally-unique-anymore-heres-what-changed-and-why-im-3a1f",
+    "platform": "Dev.to",
+    "category": "DevSecOps",
+    "date": "Mar 19, 2026, 11:54 AM UTC",
+    "publishedAt": "2026-03-19T11:54:35.000Z"
+  },
+  {
+    "title": "I built a zero-cost end-to-end DevOps pipeline (GitHub Actions + Docker + Kubernetes + Docker Hub)",
+    "url": "https://dev.to/rufilboss/i-built-a-zero-cost-end-to-end-devops-pipeline-github-actions-docker-kubernetes-docker-hub-2g9n",
+    "platform": "Dev.to",
+    "category": "Kubernetes",
+    "date": "Mar 4, 2026, 11:27 AM UTC",
+    "publishedAt": "2026-03-04T11:27:47.000Z"
+  },
+  {
+    "title": "Are You Planning to Get Into DevOps in 2026? A Practical Guide for the Real World",
+    "url": "https://dev.to/rufilboss/are-you-planning-to-get-into-devops-in-2026-a-practical-guide-for-the-real-world-3blb",
+    "platform": "Dev.to",
+    "category": "DevSecOps",
+    "date": "Dec 24, 2025, 9:57 PM UTC",
+    "publishedAt": "2025-12-24T21:57:09.000Z"
+  },
+  {
+    "title": "A Practical Guide to Organizing an AWS Community Day (From Scratch)",
+    "url": "https://dev.to/rufilboss/a-practical-guide-to-organizing-an-aws-community-day-from-scratch-1ao4",
+    "platform": "Dev.to",
+    "category": "AWS",
+    "date": "Dec 23, 2025, 11:59 AM UTC",
+    "publishedAt": "2025-12-23T11:59:50.000Z"
+  }
+]
