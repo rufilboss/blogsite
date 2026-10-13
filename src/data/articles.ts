@@ -12,7 +12,7 @@ export type PublishedArticle = {
 export const author = {
   name: 'Ilyas Rufai',
   siteUrl: 'https://blog.rufilboss.me/',
-  hashnodeUrl: 'https://blog.rufilboss.me/',
+  hashnodeUrl: 'https://rufilboss.hashnode.dev/',
   devToUrl: 'https://dev.to/rufilboss',
   freeCodeCampUrl: 'https://www.freecodecamp.org/news/author/rufilboss/',
   reclearUrl: 'https://reclear.io/blog/writers/rufilboss',
