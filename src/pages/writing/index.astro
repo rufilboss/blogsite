@@ -1,19 +1,17 @@
 ---
-import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import ArticleCard from '../../components/ArticleCard.astro';
+import { publishedArticles, author } from '../../data/articles';
 
-const posts = (await getCollection('writing')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const filters = ['all', 'platform engineering', 'devsecops', 'engineering leadership'];
+const filters = ['all', 'security', 'aws', 'devsecops', 'kubernetes', 'ci/cd'];
 ---
 
-<SiteLayout title="Writing Archive" description="Article archive for engineering, operations, and secure platform work." currentPath="/writing">
+<SiteLayout title="Writing Archive" description="Published articles and writing by Ilyas Rufai across Hashnode, Dev.to, Reclear, and freeCodeCamp." currentPath="/writing">
   <main>
     <div class="container">
       <div class="section-heading">
         <div>
           <div class="eyebrow">Writing Archive</div>
-          <h1>Field notes and essays</h1>
+          <h1>Published articles by {author.name}</h1>
         </div>
       </div>
 
@@ -24,8 +22,16 @@ const filters = ['all', 'platform engineering', 'devsecops', 'engineering leader
       </div>
 
       <div class="card-list">
-        {posts.map((post) => (
-          <ArticleCard post={post} />
+        {publishedArticles.map((article) => (
+          <article class="article-card">
+            <div class="card-meta">
+              <span>{article.platform}</span>
+              <span>{article.date}</span>
+              <span>{article.category}</span>
+            </div>
+            <h3><a href={article.url} target="_blank" rel="noreferrer">{article.title}</a></h3>
+            <p>Read the original article on {article.platform}.</p>
+          </article>
         ))}
       </div>
     </div>

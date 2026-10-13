@@ -1,26 +1,24 @@
 ---
-import { getCollection } from 'astro:content';
 import SiteLayout from '../layouts/SiteLayout.astro';
-import ArticleCard from '../components/ArticleCard.astro';
+import { author, publishedArticles } from '../data/articles';
 
-const posts = (await getCollection('writing')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const featured = posts.filter((post) => post.data.featured).slice(0, 3);
-const topics = ['Platform Engineering', 'DevSecOps', 'Engineering Leadership'];
+const featured = publishedArticles.slice(0, 4);
+const topics = ['Platform Engineering', 'DevSecOps', 'Security Automation', 'Cloud & AWS'];
 ---
 
-<SiteLayout title="Field Notes" description="Editorial notes on platform engineering, developer experience, and secure delivery." currentPath="/">
+<SiteLayout title="Field Notes" description="Engineering notes, DevSecOps writing, and cloud security articles by Ilyas Rufai." currentPath="/">
   <section class="hero">
     <div class="container hero-grid">
       <div>
         <div class="eyebrow">Field Notes</div>
         <h1>Engineering systems that stay humane under pressure.</h1>
         <p class="hero-copy">
-          I write about platform thinking, secure defaults, and the operating realities behind dependable product delivery.
+          I’m {author.name}, and I write about platform thinking, secure defaults, and the operating realities behind dependable product delivery.
         </p>
       </div>
       <aside class="hero-aside">
         <div class="eyebrow">Current focus</div>
-        <p>Senior engineering and DevSecOps writing for teams shipping critical systems at scale.</p>
+        <p>DevSecOps engineering, cloud security, and technical writing for teams shipping critical systems at scale.</p>
       </aside>
     </div>
   </section>
@@ -34,8 +32,16 @@ const topics = ['Platform Engineering', 'DevSecOps', 'Engineering Leadership'];
         </div>
 
         <div class="card-list">
-          {featured.map((post) => (
-            <ArticleCard post={post} isFeatured={true} />
+          {featured.map((article) => (
+            <article class="article-card">
+              <div class="card-meta">
+                <span>{article.platform}</span>
+                <span>{article.date}</span>
+                <span>{article.category}</span>
+              </div>
+              <h3><a href={article.url} target="_blank" rel="noreferrer">{article.title}</a></h3>
+              <p>{article.platform} article from the real Ilyas Rufai publication archive.</p>
+            </article>
           ))}
         </div>
       </div>
